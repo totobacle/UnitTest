@@ -1,6 +1,6 @@
 build: false
 clone_depth: 1
-clone_folder: c:\projects\symfony
+clone_folder: c:\projects\symfony-demo
 
 cache:
     - '%LOCALAPPDATA%\Composer\files'
