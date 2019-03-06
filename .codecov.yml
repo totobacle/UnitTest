@@ -1,1 +1,2 @@
-
+export CODECOV_TOKEN="b3e7d776-c069-4d73-893a-e00ee9b44ee4"
+bash <(curl -s https://codecov.io/bash)
