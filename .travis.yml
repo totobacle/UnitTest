@@ -1,3 +1,5 @@
+env:
+  - CODECOV_TOKEN="47165ff1-d005-4427-8f2c-c64bd3fa5200"
 # Project language
 language: php
 
