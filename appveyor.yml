@@ -52,5 +52,5 @@ install:
 
 test_script:
     - cd c:\projects\symfony-demo
-    - vendor/bin/simple-phpunit tests
+    - ./vendor/bin/simple-phpunit tests
     - dir c:\projects\symfony-demo\tests\AppBundle\Util
