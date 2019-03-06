@@ -44,7 +44,6 @@ install:
     - cd c:\projects\symfony-demo
     - IF NOT EXIST composer.phar (appveyor DownloadFile https://getcomposer.org/download/1.3.0/composer.phar)
     - php composer.phar self-update
-    - php composer.phar install
     - IF %APPVEYOR_REPO_BRANCH%==master (SET COMPOSER_ROOT_VERSION=dev-master) ELSE (SET COMPOSER_ROOT_VERSION=%APPVEYOR_REPO_BRANCH%.x-dev)
     - php composer.phar update --no-progress --ansi
     - SET COMPOSER_ROOT_VERSION=dev-master
@@ -53,4 +52,5 @@ install:
 
 test_script:
     - cd c:\projects\symfony-demo
-    - vendor/bin/simple-phpunit tests/AppBundle
+    - vendor/bin/simple-phpunit tests\AppBundle
+    - dir c:\projects\symfony-demo\tests
