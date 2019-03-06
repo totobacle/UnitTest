@@ -52,4 +52,4 @@ install:
 
 test_script:
     - cd c:\projects\symfony-demo
-    - vendor/bin/simple-phpunit
+    - vendor/bin/simple-phpunit tests/AppBundle
